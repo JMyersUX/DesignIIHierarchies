@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Hierarchy 3 - page-specific type (loaded after style.css)
+   Headings h1-h4: Crimson Pro
+   Paragraph, emphasis, link: Fira Sans
+   Navbar, page title, specs stay Roboto Mono (from style.css)
+   ========================================================================== */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Crimson Pro', serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a.link {
+  font-weight: 400;
+}

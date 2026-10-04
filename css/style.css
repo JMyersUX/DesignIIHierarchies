@@ -1,0 +1,193 @@
+
+
+:root {
+  --navy: #06111C;
+  --nav-link: #CBD5E1;
+  --nav-link-active: #FFFFFF;
+  --btn-orange: #FB8500;
+  --btn-blue: #3B82F6;
+  --grid-col-1: #FDE68A;
+  --grid-col-2: #93C5FD;
+  --grid-col-3: #6EE7B7;
+}
+
+/* Test palette - applied via <body class="palette-test"> (index + hierarchy-1) */
+.palette-test {
+  --space-indigo: #2B2D42;
+  --lavender-grey: #8D99AE;
+  --platinum: #EDF2F4;
+  --strawberry-red: #EF233C;
+  --flag-red: #D90429;
+
+  /* Remap the existing theme variables */
+  --navy: var(--space-indigo);
+  --nav-link: var(--platinum);
+  --nav-link-active: var(--strawberry-red);
+  --btn-orange: var(--strawberry-red);
+  --btn-blue: var(--flag-red);
+
+  background-color: var(--platinum);
+  color: var(--space-indigo);
+}
+
+.palette-test h1,
+.palette-test h2,
+.palette-test h3,
+.palette-test h4,
+.palette-test h5,
+.palette-test h6 {
+  color: var(--space-indigo);
+}
+
+.palette-test a:not(.nav-link):not(.navbar-brand):not(.dropdown-item):not(.btn) {
+  color: var(--flag-red);
+}
+
+.palette-test .card {
+  background-color: var(--lavender-grey);
+  border-color: var(--lavender-grey);
+  color: var(--space-indigo);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+/* Roboto Mono: navbar, page titles, and code/spec text only */
+.font-mono,
+.navbar-custom,
+h1.title,
+code, kbd, pre, samp {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Major Third (1.25) type scale */
+h6 { font-size: 1.25rem; }
+h5 { font-size: 1.563rem; }
+h4 { font-size: 1.953rem; }
+h3 { font-size: 2.441rem; }
+h2 { font-size: 3.052rem; }
+h1 { font-size: 3.815rem; }
+small, .small { font-size: 0.8rem; }
+
+/* Type spec lists on hierarchy pages */
+.roboto-mono-specs {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Divider above the specs only when it sits beside the text (lg+);
+   on mobile the specs stack directly under the paragraph */
+@media (min-width: 992px) {
+  .specsDiv {
+    border-top: var(--bs-border-width) solid var(--bs-border-color);
+  }
+}
+
+/* Layout spacing: 4px between sticky navbar and content container */
+.content-container {
+  margin-top: 4px;
+}
+
+/* Footer */
+.site-footer {
+  flex-shrink: 0;
+  background-color: var(--navy);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--navy);
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar-custom .nav-link {
+  color: var(--nav-link);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: var(--nav-link-active);
+}
+
+.navbar-custom .nav-link.active {
+  color: var(--nav-link-active);
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: var(--navy);
+}
+
+.navbar-custom .dropdown-item {
+  color: var(--nav-link);
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus,
+.navbar-custom .dropdown-item.active {
+  color: var(--nav-link-active);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--nav-link);
+}
+
+/* Shared orange/blue-hover button used for cards + modal triggers */
+.btn-pixel {
+  background-color: var(--btn-orange);
+  border-color: var(--btn-orange);
+  color: #fff;
+}
+
+.btn-pixel:hover,
+.btn-pixel:focus {
+  background-color: var(--btn-blue);
+  border-color: var(--btn-blue);
+  color: #fff;
+}
+
+/* Cards page */
+.card-equal {
+  height: 100%;
+}
+
+/* Type specimen images on index cards: full width, no cropping */
+.card-img-type {
+  width: 100%;
+  height: auto;
+}
+
+.card-img-fixed {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+
+
+.grid-col-1 { background-color: var(--grid-col-1); }
+.grid-col-2 { background-color: var(--grid-col-2); }
+.grid-col-3 { background-color: var(--grid-col-3); }

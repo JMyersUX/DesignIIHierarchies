@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Hierarchy 2 - page-specific type (loaded after style.css)
+   Headings h1-h4: Bodoni Moda
+   Paragraph, emphasis, link: Encode Sans Semi Expanded
+   Navbar, page title, specs stay Roboto Mono (from style.css)
+   ========================================================================== */
+
+body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bodoni Moda', serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a.link {
+  font-weight: 400;
+}
