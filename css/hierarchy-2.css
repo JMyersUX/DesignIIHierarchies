@@ -1,10 +1,3 @@
-/* ==========================================================================
-   Hierarchy 2 - page-specific type (loaded after style.css)
-   Headings h1-h4: Bodoni Moda
-   Paragraph, emphasis, link: Encode Sans Semi Expanded
-   Navbar, page title, specs stay Roboto Mono (from style.css)
-   ========================================================================== */
-
 body {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-weight: 400;
@@ -21,6 +14,16 @@ h1, h2, h3 {
 h4 {
   font-weight: 400;
 }
+
+/* Perfect Fifth (1.5) type scale - h1-h4 use the first four steps */
+h4 { font-size: 1.5rem; }
+h3 { font-size: 2.25rem; }
+h2 { font-size: 3.375rem; }
+h1 { font-size: 5.063rem; }
+small, .small { font-size: 0.667rem; }
+
+/* Page title stays the same size as on the other hierarchy pages */
+h1.title { font-size: 3.815rem; }
 
 strong {
   font-weight: 700;
